@@ -6,8 +6,8 @@ class GFBrowserDetails extends GFAddOn {
 	
 	protected $_version = GF_BROWSERDETAILS_VERSION;
 	protected $_min_gravityforms_version = '1.9.11.6';
-	protected $_slug = 'gravity-forms-browser-details';
-	protected $_path = 'gravity-forms-browser-details/browserdetails.php';
+	protected $_slug = 'browser-details-for-gravity-forms';
+	protected $_path = 'browser-details-for-gravity-forms/browserdetails.php';
 	protected $_full_path = __FILE__;
 	protected $_url = 'http://travislop.es';
 	protected $_title = 'Gravity Forms Browser Details';
@@ -142,7 +142,7 @@ class GFBrowserDetails extends GFAddOn {
 			if ( is_array( $value ) ) {
 				$value = $value['string'];
 			} else if ( is_bool( $value ) ) {
-				$value = $value ? esc_html__( 'Enabled', 'gravity-forms-browser-details' ) : esc_html__( 'Disabled', 'gravity-forms-browser-details' );
+				$value = $value ? esc_html__( 'Enabled', 'browser-details-for-gravity-forms' ) : esc_html__( 'Disabled', 'browser-details-for-gravity-forms' );
 			}
 			
 			$browser_details[ $label ] = $value;
@@ -183,7 +183,7 @@ class GFBrowserDetails extends GFAddOn {
 			if ( is_array( $value ) ) {
 				$note .= $value['string'];
 			} else if ( is_bool( $value ) ) {
-				$note .= $value ? esc_html__( 'Enabled', 'gravity-forms-browser-details' ) : esc_html__( 'Disabled', 'gravity-forms-browser-details' );
+				$note .= $value ? esc_html__( 'Enabled', 'browser-details-for-gravity-forms' ) : esc_html__( 'Disabled', 'browser-details-for-gravity-forms' );
 			} else {
 				$note .= $value;
 			}
@@ -216,7 +216,7 @@ class GFBrowserDetails extends GFAddOn {
 		}
 		
 		$merge_tags[] = array(
-			'label' => esc_html__( 'Browser Details', 'gravity-forms-browser-details' ),
+			'label' => esc_html__( 'Browser Details', 'browser-details-for-gravity-forms' ),
 			'tag'   => '{browser_details}'
 		);
 		
@@ -301,22 +301,22 @@ class GFBrowserDetails extends GFAddOn {
 	 */
 	public function add_form_settings_fields( $settings, $form ) {
 		
-		$settings_key     = esc_html__( 'Browser Details', 'gravity-forms-browser-details' );
+		$settings_key     = esc_html__( 'Browser Details', 'browser-details-for-gravity-forms' );
 		$details_settings = array();
 		
 		$details_settings['browserDetailsEnable']  = '<tr>';
-		$details_settings['browserDetailsEnable'] .= '<th><label for="browserDetailsEnable">' . esc_html__( 'Enable Browser Details', 'gravity-forms-browser-details' ) . '</label></th>';
+		$details_settings['browserDetailsEnable'] .= '<th><label for="browserDetailsEnable">' . esc_html__( 'Enable Browser Details', 'browser-details-for-gravity-forms' ) . '</label></th>';
 		$details_settings['browserDetailsEnable'] .= '<td>';
 		$details_settings['browserDetailsEnable'] .= '<input type="checkbox" id="browserDetailsEnable" name="browserDetailsEnable" value="1" ' . checked( '1', rgar( $form, 'browserDetailsEnable' ), false ) . ' />';
-		$details_settings['browserDetailsEnable'] .= '<label for="browserDetailsEnable">' . esc_html__( 'Enable browser details for form', 'gravity-forms-browser-details' ) . '</label>';
+		$details_settings['browserDetailsEnable'] .= '<label for="browserDetailsEnable">' . esc_html__( 'Enable browser details for form', 'browser-details-for-gravity-forms' ) . '</label>';
 		$details_settings['browserDetailsEnable'] .= '</td>';
 		$details_settings['browserDetailsEnable'] .= '</tr>';
 
 		$details_settings['browserDetailsDisplay']  = '<tr>';
-		$details_settings['browserDetailsDisplay'] .= '<th><label for="browserDetailsDisplay">' . esc_html__( 'Display Browser Details', 'gravity-forms-browser-details' ) . '</label></th>';
+		$details_settings['browserDetailsDisplay'] .= '<th><label for="browserDetailsDisplay">' . esc_html__( 'Display Browser Details', 'browser-details-for-gravity-forms' ) . '</label></th>';
 		$details_settings['browserDetailsDisplay'] .= '<td>';
 		$details_settings['browserDetailsDisplay'] .= '<input type="checkbox" id="browserDetailsDisplay" name="browserDetailsDisplay" value="1" ' . checked( '1', rgar( $form, 'browserDetailsDisplay' ), false ) . ' />';
-		$details_settings['browserDetailsDisplay'] .= '<label for="browserDetailsDisplay">' . esc_html__( 'Display browser details below form fields', 'gravity-forms-browser-details' ) . '</label>';
+		$details_settings['browserDetailsDisplay'] .= '<label for="browserDetailsDisplay">' . esc_html__( 'Display browser details below form fields', 'browser-details-for-gravity-forms' ) . '</label>';
 		$details_settings['browserDetailsDisplay'] .= '</td>';
 		$details_settings['browserDetailsDisplay'] .= '</tr>';
 		
@@ -364,15 +364,15 @@ class GFBrowserDetails extends GFAddOn {
 	public function get_detail_labels() {
 		
 		return array(
-			'operatingSystem'   => esc_html__( 'Operating System', 'gravity-forms-browser-details' ),
-			'browser'           => esc_html__( 'Web Browser', 'gravity-forms-browser-details' ),
-			'browserResolution' => esc_html__( 'Browser Resolution', 'gravity-forms-browser-details' ),
-			'screenResolution'  => esc_html__( 'Screen Resolution', 'gravity-forms-browser-details' ),
-			'colorDepth'        => esc_html__( 'Color Depth', 'gravity-forms-browser-details' ),
-			'ip'                => esc_html__( 'IP Address', 'gravity-forms-browser-details' ),
-			'cookies'           => esc_html__( 'Cookies', 'gravity-forms-browser-details' ),
-			'flashVersion'      => esc_html__( 'Flash Version', 'gravity-forms-browser-details' ),
-			'javascript'        => esc_html__( 'Javascript', 'gravity-forms-browser-details' )
+			'operatingSystem'   => esc_html__( 'Operating System', 'browser-details-for-gravity-forms' ),
+			'browser'           => esc_html__( 'Web Browser', 'browser-details-for-gravity-forms' ),
+			'browserResolution' => esc_html__( 'Browser Resolution', 'browser-details-for-gravity-forms' ),
+			'screenResolution'  => esc_html__( 'Screen Resolution', 'browser-details-for-gravity-forms' ),
+			'colorDepth'        => esc_html__( 'Color Depth', 'browser-details-for-gravity-forms' ),
+			'ip'                => esc_html__( 'IP Address', 'browser-details-for-gravity-forms' ),
+			'cookies'           => esc_html__( 'Cookies', 'browser-details-for-gravity-forms' ),
+			'flashVersion'      => esc_html__( 'Flash Version', 'browser-details-for-gravity-forms' ),
+			'javascript'        => esc_html__( 'Javascript', 'browser-details-for-gravity-forms' )
 		);
 		
 	}
