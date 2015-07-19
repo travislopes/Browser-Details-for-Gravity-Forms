@@ -1,7 +1,7 @@
 <?php
 	
 /*
-Plugin Name: Gravity Forms Browser Details
+Plugin Name: Browser Details for Gravity Forms
 Plugin URI: http://travislop.es/
 Description: Attach your users' browser details to form submissions and notifications
 Version: 1.0

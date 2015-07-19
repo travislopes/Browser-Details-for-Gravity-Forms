@@ -1,4 +1,4 @@
-# Gravity Forms Browser Details
+# Browser Details for Gravity Forms
 **Contributors:** travislopes
 
 **Requires at least:** 4.2.2
@@ -6,7 +6,7 @@
 **Tested up to:** 4.3
 
 ### Description
-Building a support form and need to know what browser your customers are using? Gravity Forms Browser Details collects information about your users' browser setup and attaches that information in the entry note, provides it as a merge tag for notifications and displays it on the form (when enabled).
+Building a support form and need to know what browser your customers are using? Browser Details for Gravity Forms collects information about your users' browser setup and attaches that information in the entry note, provides it as a merge tag for notifications and displays it on the form (when enabled).
 
 ### Changelog
 * v1.0
